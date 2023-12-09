@@ -127,7 +127,6 @@ const PomodoroApp = () => {
     <div className="pomodoro-container">
       <div className="input-container container">
       <h1>Pomodoro Timer</h1>
-        <div className="target">
         <label htmlFor="total-hours">Target Time - Hours:</label>
         <input
           id="total-hours"
@@ -142,7 +141,6 @@ const PomodoroApp = () => {
           value={totalMinutes}
           onChange={(e) => setTotalMinutes(Math.max(0, Number(e.target.value)))}
         />
-        </div>
         <label htmlFor="pomodoro-duration">Pomodoro Duration (minutes):</label>
         <input
           id="pomodoro-duration"

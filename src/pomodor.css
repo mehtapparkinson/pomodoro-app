@@ -1,14 +1,8 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-    height: 100vh;
-}
+.pomodoro-container h1 {
+    color: #ffffff; 
+    margin: 30px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.822);
 
-h1 {
-    color: #ff6347; 
 }
 
 input[type="number"] {
@@ -66,13 +60,52 @@ img {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center; 
     width: 50%;
+    margin:  100px auto ;
+}
+
+.pomodoro-container {
+    text-align: center;
+    min-height: 130vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:  100px auto ;
 }
 
 p {
     margin: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .input-container label,
+    .input-container input,
+    button {
+        margin: 5px;
+        max-width: 100px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 90%;
+        
+    }
+
+    .timer, .info {
+        font-size: 1.5em; 
+    
+    }
+
+    h1 {
+        margin: 20px;
+        font-size: 1.8em;
+    }
+
+    img {
+        width: 25px;
+        height: 25px;
+    }
 }

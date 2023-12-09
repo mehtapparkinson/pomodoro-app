@@ -124,10 +124,9 @@ const PomodoroApp = () => {
   };
 
   return (
-    <div className="container">
-      
+    <div className="pomodoro-container">
+      <div className="input-container container">
       <h1>Pomodoro Timer</h1>
-      <div className="input-container">
         <div className="target">
         <label htmlFor="total-hours">Target Time - Hours:</label>
         <input
@@ -158,7 +157,7 @@ const PomodoroApp = () => {
           value={breakDuration}
           onChange={handleBreakDurationChange}
         />
-      </div>
+      
       <p>
         <strong>Target Time:</strong> {totalHours} hours and {totalMinutes} minutes
       </p>
@@ -169,6 +168,7 @@ const PomodoroApp = () => {
       <button onClick={resetTimer}>Reset</button>
       <p className="info">{isWorkTime ? "Work Time" : "Break Time"}</p>
       <div>{renderTomatoes()}</div>
+      </div>
     </div>
   );
 };

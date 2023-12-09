@@ -1,63 +1,89 @@
-/* PomodoroDescription Styles */
-body {
-  min-height: 120vh;
-}
 .pomodoro-description {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    width: 40%;
-    margin: 150px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  margin: 100px auto;
+  padding: 30px;
+  margin-top: 700px;
+  min-height: 100vh;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  width: 40%;
+  margin: 150px auto;
+}
+
+.pomodoro-description h2 {
+  color: tomato;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pomodoro-description p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.pomodoro-description .feature-list {
+  margin-top: 30px;
+}
+
+.pomodoro-description h3 {
+  color: tomato;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.pomodoro-description ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.pomodoro-description ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.pomodoro-description li {
+  margin-bottom: 10px;
+}
+
+.pomodoro-description p:last-child {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .pomodoro-description {
+    width: 90%; 
+    margin: 100px auto;
+    padding: 20px; 
   }
-  
-  .pomodoro-description h2 {
-    color: tomato;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .pomodoro-description p {
-    color: #555555;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .pomodoro-description .feature-list {
-    margin-top: 30px;
-  }
-  
+
+  .pomodoro-description h2,
   .pomodoro-description h3 {
-    color: tomato;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
+    font-size: 18px; 
   }
-  
-  .pomodoro-description ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    color: #555555;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
+
+  .pomodoro-description p,
+  .pomodoro-description ul,
   .pomodoro-description ol {
-    list-style-type: decimal;
-    margin-left: 20px;
-    color: #555555;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px; 
   }
-  
-  .pomodoro-description li {
-    margin-bottom: 10px;
+
+  .pomodoro-description ul,
+  .pomodoro-description ol {
+    margin-left: 15px;
   }
-  
-  .pomodoro-description p:last-child {
-    margin-top: 30px;
-  }
-  
+}

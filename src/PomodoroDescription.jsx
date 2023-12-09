@@ -1,5 +1,4 @@
-import React from 'react';
-import './PomodoroDescription.css'; // Ensure this path is correct
+import './PomodoroDescription.css';
 
 const PomodoroDescription = () => {
   return (

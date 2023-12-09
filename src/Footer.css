@@ -2,12 +2,11 @@
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 20px 10px;
   text-align: center;
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0;
-  left: 0;
 }
 
 .footer-content {
@@ -17,8 +16,8 @@
 }
 
 .footer p {
-  margin: 15px;
-  font-size: 14px;
+  padding: 0 15px;
+  font-size: 12px;
 }
 
 .footer-links {
@@ -28,16 +27,43 @@
 
 .footer-links li {
   display: inline;
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 .footer-links a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  margin: 0px 20px;
+  padding: 0px 20px;
 }
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; 
+  }
+
+  .footer p {
+    padding: 10px 0; 
+    font-size: 16px; 
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-links li {
+    display: block;
+    padding-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .footer-links a {
+    padding: 5px;
+  }
 }

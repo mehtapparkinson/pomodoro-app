@@ -1,0 +1,63 @@
+/* PomodoroDescription Styles */
+body {
+  min-height: 120vh;
+}
+.pomodoro-description {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 40%;
+    margin: 150px auto;
+  }
+  
+  .pomodoro-description h2 {
+    color: tomato;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .pomodoro-description p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .pomodoro-description .feature-list {
+    margin-top: 30px;
+  }
+  
+  .pomodoro-description h3 {
+    color: tomato;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .pomodoro-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .pomodoro-description ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .pomodoro-description li {
+    margin-bottom: 10px;
+  }
+  
+  .pomodoro-description p:last-child {
+    margin-top: 30px;
+  }
+  
